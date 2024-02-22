@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="styles/general.css">
   <link rel="stylesheet" href="styles/header.css">
   <link rel="stylesheet" href="styles/video.css">
+  <link rel="stylesheet" href="styles/sidebar.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,35 +17,70 @@
 
 <body>
   <div class="header">
-    <div class="left-section">left-setion</div>
-    <div class="middle-section">
-      <input class="right-bar" type="text" placeholder="Search">
+    <div class="left-section">
+      <img class="hamburger-menu" src="icons/hamburger-menu.svg" alt="">
+      <img class="youtube-logo" src="icons/youtube-logo.svg" alt="">
     </div>
-    <div class="right-section">right-section</div>
+
+    <div class="middle-section">
+      <input class="search-bar" type="text" placeholder="Search">
+      <button class="search-btn" >
+        <img class="search-icon" src="icons/search.svg" alt="">
+      </button>
+      <button class="voice-search-btn" >
+          <img class="voice-search-icon" src="icons/voice-search-icon.svg" alt="">
+      </button>
+    </div>
+
+    <div class="right-section">
+      <img class="upload-icon" src="icons/upload.svg" alt="">
+      <img class="youtube-apps-icon" src="icons/youtube-apps.svg" alt="">
+      <!-- to to notification with notification count we have position absolute inside position relative -->
+      <div class="notifications-icon-container"><img class="notifications-icon" src="icons/notifications.svg" alt="">
+      <div class="notifications-count">5</div>
+      </div>
+      
+      <img class="current-user-picture" src="img/unnamed.jpg" alt="">
+    </div>
     
   </div>
-  
+  <!-- side bar -->
+  <div class="sidebar">
+    sidebar
+  </div>
+  <!-- body section -->
   <!-- row-1 box-1 -->
   <div class="video-grid">
     <div class="video-preview">
-      <div class="thumbnail-row"><img class="thumbnail" src="img/thumbnail-1.webp" alt="">
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="img/thumbnail-1.webp" alt="">
+        <div class="video-time">14:20</div>
       </div>
       <div class="video-info-grid">
-        <div class="channel-picture"><img class="profile-picture" src="/img/channel-1.jpeg" alt=""></div>
+        <div class="channel-picture">
+          <img class="profile-picture" src="img/channel-1.jpeg" alt="">
+        </div>
         <div class="video-info">
           <p class="video-title">
-            Talking Tech and AI with Google CEO Sundar Pichai!</p>
-          <p class="video-author">Marques Brownlee </p>
-          <p class="video-status">3.4M views &#183 6 months ago</p>
+            Talking Tech and AI with Google CEO Sundar Pichai!
+          </p>
+          <p class="video-author">
+            Marques Brownlee 
+          </p>
+          <p class="video-status">
+            3.4M views &#183 6 months ago
+          </p>
         </div>
       </div>
     </div>
   <!-- row-1  box-2  -->
     <div class="video-preview">
-      <div class="thumbnail-row"><img class="thumbnail" src="img/thumbnail-2.webp" alt="">
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="img/thumbnail-2.webp" alt="">
+        <div class="video-time">8:22</div>
       </div>
       <div class="video-info-grid">
-        <div class="channel-picture"><img class="profile-picture" src="/img/channel-2.jpeg" alt=""></div>
+        <div class="channel-picture"><img class="profile-picture" src="img/channel-2.jpeg" alt=""></div>
         <div class="video-info">
           <p class="video-title">
             try Not To Laugh Challenege #9</p>
@@ -55,10 +91,12 @@
     </div>
     <!--row-1  box-3 -->
     <div class="video-preview">
-      <div class="thumbnail-row"><img class="thumbnail" src="img/thumbnail-3.webp" alt="">
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="img/thumbnail-3.webp" alt="">
+        <div class="video-time">9:13</div>
       </div>
       <div class="video-info-grid">
-        <div class="channel-picture"><img class="profile-picture" src="/img/channel-3.jpeg" alt=""></div>
+        <div class="channel-picture"><img class="profile-picture" src="img/channel-3.jpeg" alt=""></div>
         <div class="video-info">
           <p class="video-title">
             Crazy Tik Toks Taken Moments Before DISASTER</p>
@@ -70,10 +108,12 @@
     </div>
     <!-- row-2 box-1 -->
     <div class="video-preview">
-      <div class="thumbnail-row"><img class="thumbnail" src="img/thumbnail-4.webp" alt="">
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="img/thumbnail-4.webp" alt="">
+        <div class="video-time">22:09</div>
       </div>
       <div class="video-info-grid">
-        <div class="channel-picture"><img class="profile-picture" src="/img/channel-4.jpeg" alt=""></div>
+        <div class="channel-picture"><img class="profile-picture" src="img/channel-4.jpeg" alt=""></div>
         <div class="video-info">
           <p class="video-title">
             
@@ -85,10 +125,12 @@ The Simplest Math Problem No One Can Solve - Collatz Conjecture</p>
     </div>
      <!-- row-2 box-2 -->
     <div class="video-preview">
-      <div class="thumbnail-row"><img class="thumbnail" src="img/thumbnail-5.webp" alt="">
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="img/thumbnail-5.webp" alt="">
+        <div class="video-time">11:17</div>
       </div>
       <div class="video-info-grid">
-        <div class="channel-picture"><img class="profile-picture" src="/img/channel-5.jpeg" alt=""></div>
+        <div class="channel-picture"><img class="profile-picture" src="img/channel-5.jpeg" alt=""></div>
         <div class="video-info">
           <p class="video-title">
             
@@ -100,10 +142,12 @@ Kadane's Algorithm to Maximum Sum Subarray Problem</p>
     </div>
  <!-- row-2 box-3 -->
     <div class="video-preview">
-      <div class="thumbnail-row"><img class="thumbnail" src="img/thumbnail-6.webp" alt="">
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="img/thumbnail-6.webp" alt="">
+        <div class="video-time">19:59</div>
       </div>
       <div class="video-info-grid">
-        <div class="channel-picture"><img class="profile-picture" src="/img/channel-6.jpeg" alt=""></div>
+        <div class="channel-picture"><img class="profile-picture" src="img/channel-6.jpeg" alt=""></div>
         <div class="video-info">
           <p class="video-title">
            
