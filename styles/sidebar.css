@@ -5,5 +5,37 @@
   top: 55px;
   background-color: white;
   width: 72px;
-  
+  z-index: 200;
+  padding-top: 5px;
+}
+
+.sidebar-links{
+  height: 74px;
+  display: flex;
+  /* set content horizontally*/
+  justify-content:center ;
+  /* vertically enter of the element */
+  align-items: center;
+  /* it display text below the another element */
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.sidebar-links:hover{
+  background-color: rgb(235,235,235);
+}
+
+/* it means we are targeting all imagaes in sidebar links */
+.sidebar-links img{
+  height: 24px;
+  margin-bottom: 4px;
+}
+/* .sidebar-links,
+.header{
+
+} */
+
+.sidebar-links div{
+  font-family: roboto,arial;
+  font-size: 10px;
 }
